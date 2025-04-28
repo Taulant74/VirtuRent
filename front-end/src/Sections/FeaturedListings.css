@@ -1,0 +1,48 @@
+.featured-listings {
+    background: linear-gradient(180deg,#152961,#173185,#1943b5,#2563eb, #3b82f6, #4a90e2 );
+    background-size: cover; /* Static background */
+  color: white;
+}
+
+.listing-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: none;
+  border-radius: 15px;
+  background-color: #1e293b; /* Darker background color */
+  color: white;
+}
+
+.listing-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.category-icon {
+  font-size: 1.5rem;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+
+.animate-badge {
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

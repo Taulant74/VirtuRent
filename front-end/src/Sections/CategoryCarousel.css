@@ -1,0 +1,104 @@
+.category-carousel {
+    background: linear-gradient(180deg,#4a90e2, #3b82f6, #2563eb, #1d4ed8, #1e40af,#1e3a8a );
+    background-size: cover; /* Static background */
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0; /* Removes any default margin */
+  padding: 0; /* Removes any default padding */
+  margin-top: 0; /* Remove any margin to ensure seamless transition */
+}
+
+.category-carousel::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* Subtle black overlay */
+  z-index: 1;
+}
+
+.category-carousel .container {
+  position: relative;
+  z-index: 2;
+}
+
+body {
+  margin: 0; /* Removes default margin from the body */
+  padding: 0; /* Removes default padding from the body */
+  overflow-x: hidden; /* Prevents horizontal scrolling */
+}
+
+.category-carousel h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: white;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.category-carousel .category-icon {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.category-carousel .category-btn {
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 30px;
+  background-color: #1a1a1a;
+  color: white;
+  border: 1px solid #4d4d4d;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.category-carousel .category-btn:hover {
+  background-color: #333333;
+  color: #ffcc00;
+  transform: scale(1.1);
+}
+
+.category-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: none;
+  border-radius: 15px;
+}
+
+.category-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.category-icon {
+  font-size: 3rem;
+  color: #ffc107;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 0.9rem;
+  color: #f8f9fa;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

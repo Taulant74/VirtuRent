@@ -14,7 +14,7 @@ function Mainpage() {
       <HeroBanner />
       <MainSection />
       <CategoryCarousel />
-      <FeaturedListings />
+      <FeaturedListings noImages /> {/* Pass a prop to indicate no images */}
       <HowItWorks />
       <Testimonials />
       <CallToActionBanner />

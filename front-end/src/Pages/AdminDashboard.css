@@ -1,0 +1,32 @@
+.admin-dashboard .sidebar {
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  background-color: #343a40;
+  color: white;
+  padding-top: 20px;
+}
+
+.admin-dashboard .sidebar .nav-link {
+  color: #ffffff;
+  font-weight: bold;
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+}
+
+.admin-dashboard .sidebar .nav-link.active {
+  background-color: #007bff;
+}
+
+.admin-dashboard main {
+  margin-left: 200px;
+  padding: 20px;
+}
+
+.card {
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}

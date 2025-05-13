@@ -2,7 +2,7 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './FeaturedListings.css';
 
-function FeaturedListings() {
+function FeaturedListings({ noImages }) {
   const featuredListings = [
     {
       title: 'Audi A4 Quattro – Prishtina',
@@ -65,7 +65,7 @@ function FeaturedListings() {
           {featuredListings.map((listing, index) => (
             <div key={index} className="col-12 col-md-6 col-lg-4">
               <div className="card listing-card shadow-sm">
-                <img src={listing.image} className="card-img-top" alt={listing.title} />
+                {!noImages && <img src={listing.image} className="card-img-top" alt={listing.title} />}
                 <div className="card-body">
                   <div className="d-flex align-items-center mb-2">
                     <span className="category-icon me-2">{listing.category}</span>

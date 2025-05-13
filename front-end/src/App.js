@@ -1,10 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
-import AdminDashboard from './Pages/AdminDashboard';
 import Mainpage from './Pages/Mainpage';
+import AdminDashboard from './Pages/AdminDashboard';
+import ListingPage from './Pages/ListingPage';
 
 function App() {
-  return <Mainpage />;
+  return <ListingPage />;
 }
 
 export default App;

@@ -18,6 +18,10 @@ function HeroBanner() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const navigateTo = (section) => {
+    // Implement navigation logic here
+  };
+
   return (
     <header className={`hero-banner ${isVisible ? 'visible' : 'hidden'}`}>
       <div className="container d-flex flex-column flex-md-row align-items-center justify-content-between">
@@ -25,13 +29,13 @@ function HeroBanner() {
         <nav>
           <ul className="nav">
             <li className="nav-item">
-              <a className="nav-link" href="#">Home</a>
+              <button className="nav-link" onClick={() => navigateTo('home')}>Home</button>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">About</a>
+              <button className="nav-link" onClick={() => navigateTo('about')}>About</button>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">Contact</a>
+              <button className="nav-link" onClick={() => navigateTo('contact')}>Contact</button>
             </li>
           </ul>
         </nav>

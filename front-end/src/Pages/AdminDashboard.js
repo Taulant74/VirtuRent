@@ -26,40 +26,36 @@ function AdminDashboard() {
             <div className="sidebar-sticky">
               <ul className="nav flex-column text-white">
                 <li className="nav-item">
-                  <a
+                  <button
                     className={`nav-link ${activeSection === 'dashboard' ? 'active' : ''}`}
-                    href="#"
                     onClick={() => setActiveSection('dashboard')}
                   >
                     Dashboard
-                  </a>
+                  </button>
                 </li>
                 <li className="nav-item">
-                  <a
+                  <button
                     className={`nav-link ${activeSection === 'users' ? 'active' : ''}`}
-                    href="#"
                     onClick={() => setActiveSection('users')}
                   >
                     Users
-                  </a>
+                  </button>
                 </li>
                 <li className="nav-item">
-                  <a
+                  <button
                     className={`nav-link ${activeSection === 'rentals' ? 'active' : ''}`}
-                    href="#"
                     onClick={() => setActiveSection('rentals')}
                   >
                     Rentals
-                  </a>
+                  </button>
                 </li>
                 <li className="nav-item">
-                  <a
+                  <button
                     className={`nav-link ${activeSection === 'reports' ? 'active' : ''}`}
-                    href="#"
                     onClick={() => setActiveSection('reports')}
                   >
                     Reports
-                  </a>
+                  </button>
                 </li>
               </ul>
             </div>

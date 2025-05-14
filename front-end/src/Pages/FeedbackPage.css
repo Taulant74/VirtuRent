@@ -1,0 +1,48 @@
+.feedback-page {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.feedback-page h1,
+.feedback-page h2 {
+  color: #343a40;
+}
+
+.feedback-page .form-control {
+  border-radius: 5px;
+  border: 1px solid #ced4da;
+}
+
+.feedback-page .btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.feedback-page .btn-primary:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.review-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.review-text {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #495057;
+}
+
+.review-author {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #6c757d;
+}
